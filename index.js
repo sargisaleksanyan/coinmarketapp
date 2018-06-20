@@ -15,7 +15,7 @@ mongoose.connect(mongoUrl, (err) => {
 });
 
 // TODO change
-require('./service/index');
+//require('./service/index');
 
 
 app.use(bodyParser.urlencoded({
@@ -34,6 +34,7 @@ app.use((req, res, next) => {
 });
 
 require('./api/routes/index')(app);
+
 app.get('*', (req, res) => {
   //  res.sendFile(__dirname ,"../client/dist/index.html" )
   res.sendFile(path.resolve(__dirname, 'client', 'index.html'));

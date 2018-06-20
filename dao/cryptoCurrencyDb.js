@@ -3,9 +3,6 @@ const Crypto = require('../api/model/cryptocurrency-model');
 
 const service = {};
 
-
-
-
 const buildQuery = (params) => {
   const query = {};
   const andArray = [];
@@ -37,18 +34,20 @@ const buildQuery = (params) => {
 
   if (markets) {
     const marketQuery = {};
-    const marketArray = JSON.parse(markets);
+/*    console.log(typeof markets);
+    console.log('Markets', markets);
+    const marketArray = JSON.parse(markets);*/
     marketQuery['markets.exchangeName'] = {
-      $in: marketArray,
+      $in: markets,
     };
     andArray.push(marketQuery);
   }
 
   if (pairs) {
     const pairQuery = {};
-    const pairArray = JSON.parse(pairs);
+    // const pairArray = JSON.parse(pairs);
     pairQuery['markets.pairs.pair'] = {
-      $in: pairArray,
+      $in: pairs,
     };
     andArray.push(pairQuery);
   }
@@ -56,12 +55,13 @@ const buildQuery = (params) => {
   return query;
 };
 
+
 service.queryCoins = async (params) => {
   const query = buildQuery(params);
-  console.log('query', query);
   const coins = await Crypto.find(query);
   return coins;
 };
+
 // this funcation updates coin , if it does not exists then inserts.
 service.updateCoin = (coin) => {
   Crypto.findOneAndUpdate(
