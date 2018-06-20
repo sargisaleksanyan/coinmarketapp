@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6086ec67-555f-46cc-8cee-781d9f0ee1c8" name="Default" comment="" />
+    <list default="true" id="6086ec67-555f-46cc-8cee-781d9f0ee1c8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/api/model/cryptocurrency-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dbconfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/cryptoCurrencyDb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/scrapper/cryptoScrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/scrapper/marketScrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/updater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/cryptoApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/scrapper.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,47 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cryptoApi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/cryptoApi.js">
+      <file leaf-file-name="cryptoCurrencyDb.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/cryptoCurrencyDb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="14" selection-start-line="2" selection-end-line="3" />
+            <state relative-caret-position="187">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/scrapper.js">
+      <file leaf-file-name="marketScrapper.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="130">
+              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="updater.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/updater.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".eslintrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.eslintrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="95">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -68,6 +65,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pair</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -76,6 +81,19 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/service/scrapper.js" />
+        <option value="$PROJECT_DIR$/service/cryptoApi.js" />
+        <option value="$PROJECT_DIR$/service/marketScrapper.js" />
+        <option value="$PROJECT_DIR$/api/models/Currency.js" />
+        <option value="$PROJECT_DIR$/api/models/crypto_model.js" />
+        <option value="$PROJECT_DIR$/api/models/cryptocurrency-model.js" />
+        <option value="$PROJECT_DIR$/dao/cryptoMarket.js" />
+        <option value="$PROJECT_DIR$/config/dbconfig.js" />
+        <option value="$PROJECT_DIR$/service/cryptoScrapper.js" />
+        <option value="$PROJECT_DIR$/api/model/cryptocurrency-model.js" />
+        <option value="$PROJECT_DIR$/service/cryptoUpdate.js" />
+        <option value="$PROJECT_DIR$/service/updater.js" />
+        <option value="$PROJECT_DIR$/service/scrapper/marketScrapper.js" />
+        <option value="$PROJECT_DIR$/dao/cryptoCurrencyDb.js" />
       </list>
     </option>
   </component>
@@ -96,17 +114,19 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="189" />
-    <option name="y" value="285" />
-    <option name="width" value="1297" />
-    <option name="height" value="736" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="185" />
+    <option name="y" value="386" />
+    <option name="width" value="1295" />
+    <option name="height" value="753" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,18 +137,27 @@
             <path>
               <item name="coinmarket" type="b2602c69:ProjectViewProjectNode" />
               <item name="coinmarket" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coinmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coinmarket" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coinmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coinmarket" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/scrapper.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/cryptoUpdate.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -144,6 +173,9 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/scrapper" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -161,7 +193,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Debug" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="service/scrapper.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="Debug" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/service/updater.js" working-dir="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -177,27 +209,29 @@
       <workItem from="1529181466030" duration="5825000" />
       <workItem from="1529214960517" duration="6765000" />
       <workItem from="1529243324374" duration="9815000" />
-      <workItem from="1529268116318" duration="2417000" />
+      <workItem from="1529268116318" duration="18893000" />
+      <workItem from="1529387370862" duration="33180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26153000" />
+    <option name="totallyTimeSpent" value="75809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="189" y="285" width="1297" height="736" extended-state="0" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16797489" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17292644" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32970452" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29173166" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6210873" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34633386" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4867807" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3822153" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -206,6 +240,26 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16744915" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25429016" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.37441498" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -217,16 +271,76 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/service/scrapper.js</url>
-          <line>16</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/service/updater.js</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/service/updater.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/service/scrapper/marketScrapper.js</url>
+          <line>66</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/service/scrapper/marketScrapper.js</url>
+          <line>70</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/service/scrapper/marketScrapper.js</url>
+          <line>67</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="54" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/cryptoApi.js">
+    <entry file="file://$PROJECT_DIR$/service/scrapper/cryptoScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="14" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/scrapper/cryptoScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="14" selection-start-line="2" selection-end-line="3" />
@@ -254,14 +368,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/scrapper.js">
+    <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/cryptoApi.js">
+    <entry file="file://$PROJECT_DIR$/service/scrapper/cryptoScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
@@ -331,31 +445,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/cryptoApi.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/scrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="57">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/config/default-0.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="18" lean-forward="true" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dbconfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/scrapper/cryptoScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/cryptocurrency-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/updater.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/cryptoCurrencyDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
         </state>
       </provider>
     </entry>
