@@ -15,8 +15,7 @@ mongoose.connect(mongoUrl, (err) => {
 });
 
 // TODO change
-//require('./service/index');
-
+require('./service/index');
 
 app.use(bodyParser.urlencoded({
   extended: false,
