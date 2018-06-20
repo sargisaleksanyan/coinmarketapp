@@ -3,13 +3,65 @@ const Crypto = require('../api/model/cryptocurrency-model');
 
 const service = {};
 
-/* carketcap : {
-   from :
-   to:
- }
-*/
 
 
+
+const buildQuery = (params) => {
+  const query = {};
+  const andArray = [];
+  const { range } = params;
+  const { markets } = params;
+  const { pairs } = params;
+  if (range) {
+    const { from } = range;
+    const { to } = range;
+    if (from) {
+      const fromNumber = parseInt(from);
+      const rangeFrom = {
+        market_cap: {
+          $gte: fromNumber,
+        },
+      };
+      andArray.push(rangeFrom);
+    }
+    if (to) {
+      const fromNumber = parseInt(to);
+      const rangeTo = {
+        market_cap: {
+          $lte: fromNumber,
+        },
+      };
+      andArray.push(rangeTo);
+    }
+  }
+
+  if (markets) {
+    const marketQuery = {};
+    const marketArray = JSON.parse(markets);
+    marketQuery['markets.exchangeName'] = {
+      $in: marketArray,
+    };
+    andArray.push(marketQuery);
+  }
+
+  if (pairs) {
+    const pairQuery = {};
+    const pairArray = JSON.parse(pairs);
+    pairQuery['markets.pairs.pair'] = {
+      $in: pairArray,
+    };
+    andArray.push(pairQuery);
+  }
+  query.$and = andArray;
+  return query;
+};
+
+service.queryCoins = async (params) => {
+  const query = buildQuery(params);
+  console.log('query', query);
+  const coins = await Crypto.find(query);
+  return coins;
+};
 // this funcation updates coin , if it does not exists then inserts.
 service.updateCoin = (coin) => {
   Crypto.findOneAndUpdate(

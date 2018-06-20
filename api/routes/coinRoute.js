@@ -1,15 +1,17 @@
 const express = require('express');
 const controller = require('../controllers/coinController');
+const db = require('../../dao/cryptoCurrencyDb');
 
 const router = express.Router();
 
-router.post('/', (req, res) => {
+const getCoins = async (req, res) => {
   const reqBody = req.body;
-  console.log('From ', reqBody);
-  const r = JSON.parse(reqBody);
-  console.log('From ', r.from);
-  console.log('To ', r.to);
-  res.status(200).json();
+  const coins = await db.queryCoins(reqBody);
+  res.status(200).json({ coins: coins });
+};
+
+router.post('/', (req, res) => {
+  getCoins(req, res);
 });
 
 module.exports = router;
