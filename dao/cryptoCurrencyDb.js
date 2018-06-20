@@ -3,6 +3,13 @@ const Crypto = require('../api/model/cryptocurrency-model');
 
 const service = {};
 
+/* carketcap : {
+   from :
+   to:
+ }
+*/
+
+
 // this funcation updates coin , if it does not exists then inserts.
 service.updateCoin = (coin) => {
   Crypto.findOneAndUpdate(
@@ -19,19 +26,21 @@ service.updateCoin = (coin) => {
     new Crypto(coin).save();
   });
 };
+
 service.updateMarket = (coinMarket) => {
-  Crypto.updateOne(
+  Crypto.update(
     { id: coinMarket.id },
     {
       $set: {
         markets: coinMarket.exchangeMarkets,
       },
     },
-    { upsert: true, returnNewDocument: true },
+    { strict: false, upsert: true, returnNewDocument: true },
   ).catch((err) => {
     console.log(err);
   });
 };
+
 service.getCoinNameId = async () => {
   const cryptoCoins = await Crypto.find()
     .select('id website_slug')

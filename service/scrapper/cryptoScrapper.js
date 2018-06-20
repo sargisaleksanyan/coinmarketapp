@@ -43,7 +43,7 @@ const scrapCryptocurrencies = async () => {
     const parsedCryptoCurrencies = getCryptocurrencies(data.data);
     cryptoCurrencies.push(...parsedCryptoCurrencies);
 
-    for (let i = size; i < numCrypto / 10; i += size) {
+    for (let i = size; i < numCrypto; i += size) {
       start += size;
       const apiResponse = await getApiResponse(buildUrl(start));
       const { data } = apiResponse;

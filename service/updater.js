@@ -15,6 +15,7 @@ mongoose.connect(mongoUrl, (err) => {
 });
 
 service.updateCryptoCurrencies = async () => {
+  console.log('UpdatingCurrencies');
   const cryptoCurrencies = await cryptoScrapper();
   cryptoCurrencies.forEach((coin) => {
     cryptoDb.updateCoin(coin);
@@ -22,6 +23,7 @@ service.updateCryptoCurrencies = async () => {
 };
 
 service.updateExchangeMarkets = async () => {
+  console.log('UpdateExchangeMarkets');
   const cryptoCurrencies = await cryptoDb.getCoinNameId();
   const exchangeMarkets = await marketScrapper(cryptoCurrencies);
   exchangeMarkets.forEach((coin) => {
@@ -30,4 +32,4 @@ service.updateExchangeMarkets = async () => {
 };
 
 module.exports = service;
-service.updateExchangeMarkets();
+

@@ -52,17 +52,7 @@ const getAllExchanges = async (cryptocurrencies) => {
   // const urlPrefix = https://coinmarketcap.com/currencies/bitcoin/#markets
   const urlPrefix = 'https://coinmarketcap.com/currencies/';
   const urlSuffix = '/#markets';
-
-/*  cryptocurrencies.forEach((crypto) => {
-    const url = urlPrefix + crypto.website_slug + urlSuffix;
-    const exchangeMarkets = getExchanges(url);
-    cryptoMarkets.push({
-      exchangeMarkets,
-      id: crypto.id,
-    });
-  });*/
-
- // cryptocurrencies.forEach((crypto) => {
+  // cryptocurrencies.forEach((crypto) => {
   for (let i = 0; i < cryptocurrencies.length; i++) {
     const crypto = cryptocurrencies[i];
     const url = urlPrefix + crypto.website_slug + urlSuffix;
