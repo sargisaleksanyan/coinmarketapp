@@ -124,6 +124,7 @@ const createElementWithText = (name, value) => {
 
 const fillTable = (coins) => {
   const table = document.createElement('TABLE');
+  document.getElementById('table').remove();
   let tr = document.createElement('TR');
   tr.appendChild(createElementWithText('TH', 'Id'));
   tr.appendChild(createElementWithText('TH', 'Name'));
