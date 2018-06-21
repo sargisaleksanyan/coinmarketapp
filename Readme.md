@@ -3,7 +3,7 @@ Application scraps given topics from twitter and displays in Charter.
 It scrapps given topics in every 20-25 seconds( to avoid getting blocked)
 ## Getting Started
 Install git-bash in your computer follow instructions in the link
-
+  ```
  * ** https://www.atlassian.com/git/tutorials/install-git#windows
    ```
 ## Download source code from git hub
