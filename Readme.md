@@ -8,8 +8,8 @@ Install git-bash in your computer follow instructions in the link
    ```
 ## Download source code from git hub
 Download source code from git hub from this link https://github.com/sargisaleksanyan/coinmarketapp.git
-* ** https://help.github.com/articles/cloning-a-repository/
-   ```
+
+   ```  https://help.github.com/articles/cloning-a-repository/
 * **Chart viewer** . To view tweets in chart go to suburl from navigation , in /graph page to view statiscs about topic that
 exists in our database just search topic name , to view all topics click All-Topics button.
 * **Scrapper** .To scrap data from twitter go to Scrapper from Navigation menu. To scrap topics
