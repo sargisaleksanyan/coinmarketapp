@@ -123,8 +123,14 @@ const createElementWithText = (name, value) => {
 };
 
 const fillTable = (coins) => {
+
+  const table_wrapper = document.getElementById('table-wrapper');
+  if(table_wrapper){
+    table_wrapper.remove();
+  }
   const table = document.createElement('TABLE');
-  document.getElementById('table').remove();
+  table.setAttribute('id', 'table-wrapper');
+  // document.getElementById('table').remove();
   let tr = document.createElement('TR');
   tr.appendChild(createElementWithText('TH', 'Id'));
   tr.appendChild(createElementWithText('TH', 'Name'));
