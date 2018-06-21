@@ -31,10 +31,16 @@ go to directory with windows cmd  where  program folder is located and
 run
 
 ```
- npm start
- go to you browser and go http://localhost:3000/ 
+ npm install
  ```
-
+ wait then run
+ ```
+  npm start
+```
+after running
+```
+go to you browser and go http://localhost:3000/
+````
 
 
 
