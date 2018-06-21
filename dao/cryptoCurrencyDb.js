@@ -33,20 +33,18 @@ const buildQuery = (params) => {
     }
   }
 
-  if (markets) {
+  if (markets && markets.length > 0) {
     const marketQuery = {};
-    const marketArray = JSON.parse(markets);
     marketQuery['markets.exchangeName'] = {
-      $in: marketArray,
+      $in: markets,
     };
     andArray.push(marketQuery);
   }
 
-  if (pairs) {
+  if (pairs && pairs.length > 0) {
     const pairQuery = {};
-    const pairArray = JSON.parse(pairs);
     pairQuery['markets.pairs.pair'] = {
-      $in: pairArray,
+      $in: pairs,
     };
     andArray.push(pairQuery);
   }
@@ -56,7 +54,6 @@ const buildQuery = (params) => {
 
 service.queryCoins = async (params) => {
   const query = buildQuery(params);
-  console.log('query', query);
   const coins = await Crypto.find(query);
   return coins;
 };

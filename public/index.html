@@ -15,6 +15,7 @@
  border-color: darkgray;
  border-style: solid;
 }
+
 .container {
   margin-top: 25px;
 }
@@ -30,6 +31,19 @@
 }
 .search-field input{
     width: 70%;
+}
+tr {
+    border: 1px solid black;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+td ,th{
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid black;
 }
 input {
     height: 30px;
@@ -62,17 +76,18 @@ input {
     color: #ffffff;
 }
 </style>
+
 <body>
  <div class="container">
   <div class="row">
    <div class="col-sm-6 col-sm-offset-3 search">
 
      <div class="search-field">
-      <input placeholder="Marketcap From"/>
+      <input id="from"  placeholder="Marketcap From"/>
     </div>
 
    <div class="search-field">
-       <input placeholder="Marketcap To" />
+       <input id="to" placeholder="Marketcap To" />
   </div>
 
    <div class="search-field">
@@ -91,6 +106,19 @@ input {
 
   </div>
   </div>
+ </div>
+ <div id ="table" >
+<!--  <table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Market Cap</th>
+        <th>Circulating Supply(USD)</th>
+        <th>Price(USD)</th>
+        <th>Last Update</th>
+    </tr>
+  </table>-->
  </div>
 </body>
 

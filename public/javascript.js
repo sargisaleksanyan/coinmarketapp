@@ -104,13 +104,79 @@ const addMarket = function addMarket() {
   if (exchange) {
     markets.push(exchange);
   }
+  document.getElementById('exchange').value = '';
 };
+
 const addPair = function addPair() {
   const pair = document.getElementById('pair').value;
   if (pair) {
     pairs.push(pair);
   }
+  document.getElementById('pair').value = '';
 };
-const searchCoins = function () {
-  
-}
+
+const createElementWithText = (name, value) => {
+  const element = document.createElement(name);
+  const nodeText = document.createTextNode(value);
+  element.appendChild(nodeText);
+  return element;
+};
+
+const fillTable = (coins) => {
+  const table = document.createElement('TABLE');
+  let tr = document.createElement('TR');
+  tr.appendChild(createElementWithText('TH', 'Id'));
+  tr.appendChild(createElementWithText('TH', 'Name'));
+  tr.appendChild(createElementWithText('TH', 'Symbol'));
+  tr.appendChild(createElementWithText('TH', 'Market Cap'));
+  tr.appendChild(createElementWithText('TH', 'Circulating Supply(USD)'));
+  tr.appendChild(createElementWithText('TH', 'Price(USD)'));
+  tr.appendChild(createElementWithText('TH', 'Last Update'));
+  table.appendChild(tr);
+  coins.forEach((coin) => {
+    let tr = document.createElement('TR');
+    const values = [];
+    values.push(coin.id);
+    values.push(coin.name);
+    values.push(coin.symbol);
+    values.push(coin.market_cap);
+    values.push(coin.circulating_supply);
+    values.push(coin.price);
+    values.push(coin.last_updated);
+    values.forEach((value) => {
+      tr.appendChild(createElementWithText('TD', value));
+    });
+    table.appendChild(tr);
+  });
+  document.getElementById('table').appendChild(table);
+};
+
+
+const searchCoins = async function () {
+  const from = document.getElementById('from').value;
+  const to = document.getElementById('to').value;
+  document.getElementById('from').value = '';
+  document.getElementById('to').value = '';
+  const range = {};
+  if (from && from !== '') {
+    range.from = from;
+  }
+  if (to && to !== '') {
+    range.to = to;
+  }
+
+  const makeRequest = await fetch('api/coins', {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ range: range, markets: markets, pairs: pairs }),
+    // body: { range, markets, pairs },
+  });
+  const coins = await makeRequest.json();
+  fillTable(coins.coins);
+  markets = [];
+  pairs = [];
+};
+
