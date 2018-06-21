@@ -4,8 +4,6 @@ const Crypto = require('../api/model/cryptocurrency-model');
 const service = {};
 
 
-
-
 const buildQuery = (params) => {
   const query = {};
   const andArray = [];
@@ -100,4 +98,13 @@ service.getCoinNameId = async () => {
   return cryptoCoins;
 };
 
+service.getPairs = async () => {
+  const pairs = await Crypto.find().distinct('markets.pairs.pair');
+  return pairs;
+};
+
+service.getExchanges = async () => {
+  const markets = await Crypto.find().distinct('markets.exchangeName');
+  return markets;
+};
 module.exports = service;

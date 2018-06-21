@@ -1,0 +1,9 @@
+.search{
+  text-align: center;
+}
+body{
+  background-color: aqua;
+}
+.search-field input{
+  width: 90%;
+}
