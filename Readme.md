@@ -6,7 +6,7 @@ Install git-bash in your computer follow instructions in the link
  ```
  https://www.atlassian.com/git/tutorials/install-git#windows
  ```
-## Download source code from git hub
+### Download source code from git hub
 Download source code from git hub from this link https://github.com/sargisaleksanyan/coinmarketapp.git
 
    ```  https://help.github.com/articles/cloning-a-repository/
