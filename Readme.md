@@ -2,13 +2,18 @@
 Application scraps given topics from twitter and displays in Charter.
 It scrapps given topics in every 20-25 seconds( to avoid getting blocked)
 ## Getting Started
+you can download source code from git hub 2 ways
+ 1. Manually just download zip from right above part
+ 2. Recommend way by installing bit bysh
 Install git-bash in your computer follow instructions in the link
  ```
  https://www.atlassian.com/git/tutorials/install-git#windows
  ```
 ### Download source code from git hub
-Download source code from git hub from this link https://github.com/sargisaleksanyan/coinmarketapp.git
-
+Download source code from git hub from this link
+ ```
+https://github.com/sargisaleksanyan/coinmarketapp.git
+```
    ```  https://help.github.com/articles/cloning-a-repository/
 * **Chart viewer** . To view tweets in chart go to suburl from navigation , in /graph page to view statiscs about topic that
 exists in our database just search topic name , to view all topics click All-Topics button.
