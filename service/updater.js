@@ -14,18 +14,20 @@ mongoose.connect(mongoUrl, (err) => {
   }
 });
 
-service.updateCryptoCurrencies = async () => {
+service.updateCryptoCurrencies = async (update) => {
   console.log('UpdatingCurrencies');
   const cryptoCurrencies = await cryptoScrapper();
   cryptoCurrencies.forEach((coin) => {
     cryptoDb.updateCoin(coin);
   });
+  update();
 };
 
 service.updateExchangeMarkets = async () => {
   console.log('UpdateExchangeMarkets');
   const cryptoCurrencies = await cryptoDb.getCoinNameId();
   const exchangeMarkets = await marketScrapper(cryptoCurrencies);
+  console.log('exchangeMarkets.length', exchangeMarkets.length);
   exchangeMarkets.forEach((coin) => {
     cryptoDb.updateMarket(coin);
   });

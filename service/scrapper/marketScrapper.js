@@ -30,9 +30,9 @@ const getExchanges = async (url) => {
         };
         marketObject[exchange] = marketList.push(market) - 1;
       }
-
+      const pair_ = pairName.split('/');
       const pair = {
-        pair: pairName,
+        pair: pair_,
         price,
         percent,
         volume,
