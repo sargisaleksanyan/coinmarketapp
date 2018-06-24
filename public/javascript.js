@@ -1,16 +1,21 @@
 /* eslint-disable no-undef */
 let markets = [];
 let pairs = [];
+const selectedExchangeClass = 'selected-exchange-p';
+const selectedPairClass = 'selected-pair-p';
+
 function autocomplete(inp, arr) {
   let currentFocus;
 
-  inp.addEventListener('input', function(e) {
+  inp.addEventListener('input', function (e) {
     let a = this.value;
     let b = this.value;
     let i = this.value;
     const val = this.value;
     closeAllLists();
-    if (!val) { return false;}
+    if (!val) {
+      return false;
+    }
     currentFocus = -1;
     a = document.createElement('DIV');
     a.setAttribute('id', this.id + 'autocomplete-list');
@@ -25,8 +30,8 @@ function autocomplete(inp, arr) {
         /* insert a input field that will hold the current array item's value: */
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
         /* execute a function when someone clicks on the item value (DIV element): */
-        b.addEventListener('click', function(e) {
-        /* insert the value for the autocomplete text field: */
+        b.addEventListener('click', function (e) {
+          /* insert the value for the autocomplete text field: */
           inp.value = this.getElementsByTagName('input')[0].value;
           /* close the list of autocompleted values,
           (or any other open lists of autocompleted values: */
@@ -37,7 +42,7 @@ function autocomplete(inp, arr) {
     }
   });
 
-  inp.addEventListener('keydown', function(e) {
+  inp.addEventListener('keydown', function (e) {
     let x = document.getElementById(this.id + 'autocomplete-list');
     if (x) x = x.getElementsByTagName('div');
     if (e.keyCode === 40) {
@@ -53,6 +58,7 @@ function autocomplete(inp, arr) {
       }
     }
   });
+
   function addActive(x) {
     /* a function to classify an item as "active": */
     if (!x) return false;
@@ -63,12 +69,14 @@ function autocomplete(inp, arr) {
     /* add class "autocomplete-active": */
     x[currentFocus].classList.add('autocomplete-active');
   }
+
   function removeActive(x) {
     /* a function to remove the "active" class from all autocomplete items: */
     for (let i = 0; i < x.length; i++) {
       x[i].classList.remove('autocomplete-active');
     }
   }
+
   function closeAllLists(elmnt) {
     /* close all autocomplete lists in the document,
     except the one passed as an argument: */
@@ -79,15 +87,16 @@ function autocomplete(inp, arr) {
       }
     }
   }
+
   /* execute a function when someone clicks in the document: */
-  document.addEventListener('click',  (e) => {
+  document.addEventListener('click', (e) => {
     closeAllLists(e.target);
   });
 }
 
 const makePairAutoComplete = async () => {
   const pairsResponse = await fetch('api/coins/pairs');
-  const pairs =  await pairsResponse.json();
+  const pairs = await pairsResponse.json();
   autocomplete(document.getElementById('pair'), pairs.pairs);
 };
 const makeExchangesAutoComplete = async () => {
@@ -105,6 +114,15 @@ const addMarket = function addMarket() {
     markets.push(exchange);
   }
   document.getElementById('exchange').value = '';
+  const textElement = createElementWithText('div', exchange);
+  textElement.setAttribute('class', selectedExchangeClass);
+  textElement.addEventListener('click', () => {
+    const removeAblevalue = textElement.innerHTML;
+    const index = markets.indexOf(removeAblevalue);
+    markets.splice(index, 1);
+    textElement.remove();
+  });
+  document.getElementById('selected-exchanges').appendChild(textElement);
 };
 
 const addPair = function addPair() {
@@ -113,6 +131,16 @@ const addPair = function addPair() {
     pairs.push(pair);
   }
   document.getElementById('pair').value = '';
+  const textElement = createElementWithText('div', pair);
+  textElement.setAttribute('class', selectedPairClass);
+  textElement.addEventListener('click', () => {
+    const removeAblevalue = textElement.innerHTML;
+    const index = pairs.indexOf(removeAblevalue);
+    pairs.splice(index, 1);
+    textElement.remove();
+  });
+  // textElement.appendChild(textElement);
+  document.getElementById('selected-pairs').appendChild(textElement);
 };
 
 const createElementWithText = (name, value) => {
@@ -122,11 +150,17 @@ const createElementWithText = (name, value) => {
   return element;
 };
 
-const fillTable = (coins) => {
+const removeChildren = (idSelector) => {
+  const childrenElements = document.getElementById(idSelector).childNodes;
+  childrenElements.forEach( (element) =>{
+    element.remove();
+  })
+};
 
-  const table_wrapper = document.getElementById('table-wrapper');
-  if(table_wrapper){
-    table_wrapper.remove();
+const fillTable = (coins) => {
+  const tableWrapper = document.getElementById('table-wrapper');
+  if (tableWrapper) {
+    tableWrapper.remove();
   }
   const table = document.createElement('TABLE');
   table.setAttribute('id', 'table-wrapper');
@@ -156,6 +190,8 @@ const fillTable = (coins) => {
     table.appendChild(tr);
   });
   document.getElementById('table').appendChild(table);
+  removeChildren('selected-exchanges');
+  removeChildren('selected-pairs');
 };
 
 
@@ -178,7 +214,7 @@ const searchCoins = async function () {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ range: range, markets: markets, pairs: pairs }),
+    body: JSON.stringify({range: range, markets: markets, pairs: pairs}),
     // body: { range, markets, pairs },
   });
   const coins = await makeRequest.json();

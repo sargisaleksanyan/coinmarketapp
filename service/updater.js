@@ -20,7 +20,9 @@ service.updateCryptoCurrencies = async (update) => {
   cryptoCurrencies.forEach((coin) => {
     cryptoDb.updateCoin(coin);
   });
-  update();
+  if (update) {
+    update();
+  }
 };
 
 service.updateExchangeMarkets = async () => {

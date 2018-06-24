@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6086ec67-555f-46cc-8cee-781d9f0ee1c8" name="Default" comment="update">
+    <list default="true" id="6086ec67-555f-46cc-8cee-781d9f0ee1c8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/scrapper/marketScrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/scrapper/marketScrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/updater.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/updater.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,41 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/index.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="57">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updater.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/updater.js">
+      <file leaf-file-name="javascript.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marketScrapper.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cryptoCurrencyDb.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/cryptoCurrencyDb.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="49">
+              <caret line="152" column="40" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -73,9 +53,11 @@
     <findStrings>
       <find>BalanceModal</find>
       <find>console.log</find>
-      <find>pair</find>
       <find>console</find>
       <find>pairs</find>
+      <find>addPai</find>
+      <find>markets</find>
+      <find>pair</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/viwes</dir>
@@ -118,13 +100,14 @@
         <option value="$PROJECT_DIR$/api/routes/coinRoute.js" />
         <option value="$PROJECT_DIR$/api/controllers/coinController.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/javascript.js" />
         <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/service/updater.js" />
         <option value="$PROJECT_DIR$/service/index.js" />
         <option value="$PROJECT_DIR$/dao/cryptoCurrencyDb.js" />
         <option value="$PROJECT_DIR$/service/scrapper/marketScrapper.js" />
+        <option value="$PROJECT_DIR$/service/updater.js" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/javascript.js" />
       </list>
     </option>
   </component>
@@ -146,10 +129,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="153" />
-    <option name="y" value="260" />
+    <option name="x" value="117" />
+    <option name="y" value="373" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -157,7 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,23 +150,18 @@
             <path>
               <item name="coinmarketApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="coinmarketApp" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="coinmarketApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="coinmarketApp" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coinmarketApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coinmarketApp" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +231,9 @@
       <workItem from="1529523239361" duration="2500000" />
       <workItem from="1529526092768" duration="29167000" />
       <workItem from="1529591466917" duration="2372000" />
-      <workItem from="1529639324143" duration="4256000" />
+      <workItem from="1529639324143" duration="5885000" />
+      <workItem from="1529732586356" duration="242000" />
+      <workItem from="1529824398415" duration="9847000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1529463583453</created>
@@ -347,16 +326,24 @@
       <option name="project" value="LOCAL" />
       <updated>1529593426719</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1529644103934</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529644103934</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128459000" />
+    <option name="totallyTimeSpent" value="140177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20970266" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18779343" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -364,7 +351,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37285492" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37285492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43369734" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,23 +399,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="110" column="4" selection-start-line="110" selection-end-line="120" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -632,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="129" column="3" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -649,10 +609,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="110" column="4" selection-start-line="110" selection-end-line="120" selection-end-column="13" />
+        <state relative-caret-position="627">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/updater.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -666,9 +640,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/dbconfig.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dao/cryptoCurrencyDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
+        <state relative-caret-position="1368">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -676,24 +653,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/index.js">
+    <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="1343">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/updater.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-end-line="30" />
+        <state relative-caret-position="57">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/scrapper/marketScrapper.js">
+    <entry file="file://$PROJECT_DIR$/public/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="49">
+          <caret line="152" column="40" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
         </state>
       </provider>
     </entry>
