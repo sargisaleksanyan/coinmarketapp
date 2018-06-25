@@ -19,11 +19,11 @@
    <div class="col-sm-6 col-sm-offset-3 search">
 
      <div class="search-field">
-      <input id="from"  placeholder="Marketcap From"/>
+      <input id="from"  onkeyUp="printInput(event)" placeholder="Marketcap From"/>
     </div>
 
    <div class="search-field">
-       <input id="to" placeholder="Marketcap To" />
+       <input id="to"  onkeyup="printInput(event)" placeholder="Marketcap To" />
   </div>
 
    <div class="search-field">
@@ -49,6 +49,8 @@
  </div>
 </body>
 
-  <script src="javascript.js"></script>
+  <script src="javascript.js">
+  </script>
+
 
 </html>

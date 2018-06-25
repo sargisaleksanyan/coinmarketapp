@@ -4,6 +4,16 @@ let pairs = [];
 const selectedExchangeClass = 'selected-exchange-p';
 const selectedPairClass = 'selected-pair-p';
 
+/*document.getElementById('from').addEventListener('change', (this)=> {
+  console.log('this.value', document.getElementById('from').value);
+});*/
+
+const printInput = (event) => {
+  const number = event.target.value.replace(/,/g, '');
+  const formatedNumber = Number(number).toLocaleString()
+  event.target.value = formatedNumber;
+}
+
 function autocomplete(inp, arr) {
   let currentFocus;
 
@@ -108,6 +118,7 @@ makePairAutoComplete();
 
 makeExchangesAutoComplete();
 
+
 const addMarket = function addMarket() {
   const exchange = document.getElementById('exchange').value;
   if (exchange) {
@@ -152,7 +163,7 @@ const createElementWithText = (name, value) => {
 
 const removeChildren = (idSelector) => {
   const childrenElements = document.getElementById(idSelector).childNodes;
-  childrenElements.forEach( (element) =>{
+  childrenElements.forEach((element) => {
     element.remove();
   })
 };
@@ -190,14 +201,14 @@ const fillTable = (coins) => {
     table.appendChild(tr);
   });
   document.getElementById('table').appendChild(table);
-  removeChildren('selected-exchanges');
-  removeChildren('selected-pairs');
+  // removeChildren('selected-exchanges');
+  // removeChildren('selected-pairs');
 };
 
 
 const searchCoins = async function () {
-  const from = document.getElementById('from').value;
-  const to = document.getElementById('to').value;
+  const from = document.getElementById('from').value.replace(/,/g, '');
+  const to = document.getElementById('to').value.replace(/,/g, '');
   document.getElementById('from').value = '';
   document.getElementById('to').value = '';
   const range = {};
@@ -222,4 +233,13 @@ const searchCoins = async function () {
   markets = [];
   pairs = [];
 };
+const changeArray = (array) => {
+  const newArray = [];
+  array.forEach((element) => {
 
+    //const renamedElement = `/^${element}$/i`;
+    const renamedElement = new RegExp(["^", element, "$"].join(""), "i");
+    newArray.push(renamedElement);
+  });
+  return newArray;
+};
