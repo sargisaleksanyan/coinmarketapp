@@ -233,13 +233,3 @@ const searchCoins = async function () {
   markets = [];
   pairs = [];
 };
-const changeArray = (array) => {
-  const newArray = [];
-  array.forEach((element) => {
-
-    //const renamedElement = `/^${element}$/i`;
-    const renamedElement = new RegExp(["^", element, "$"].join(""), "i");
-    newArray.push(renamedElement);
-  });
-  return newArray;
-};
